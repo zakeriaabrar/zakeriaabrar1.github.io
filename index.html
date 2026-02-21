@@ -11,76 +11,105 @@
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">Zakeria Abrar</div>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Navigation -->
+<nav>
+    <div class="logo">Zakeria Abrar</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+</nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <h1>Hi, I'm Zakeria Abrar</h1>
-        <p>Web Developer | Programmer | Designer</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </section>
+<!-- Hero Section -->
+<section id="hero">
+    <img src="profile.png" alt="Profile Picture" class="profile-pic">
+    <h1>Hello, I'm <span>Zakeria Abrar</span></h1>
+    <p>Web Developer | Programmer | Designer</p>
+    <a href="#education" class="btn">View My Educational Background</a>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am Zakeria, a 3rd-year student at University of Asia Pacific. I have learned C, C++, Java, and I am currently learning Python, HTML, and CSS. I am passionate about coding, designing, and creating interactive websites.</p>
-    </section>
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm a 3rd year student at University of Asia Pacific. I have learned C, C++, Java and currently learning Python, HTML, and CSS. I love creating interactive and modern websites.</p>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill-list">
-            <div class="skill">HTML & CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">C & C++</div>
-            <div class="skill">Git & GitHub</div>
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <h3>HTML & CSS</h3>
+            <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A short description of your project.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>A short description of your project.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>A short description of your project.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
         </div>
-    </section>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
+        </div>
+        <div class="skill">
+            <h3>C & C++</h3>
+            <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+        </div>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:zakeria@example.com">zakeria@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/zakeriaabrar" target="_blank">github.com/zakeriaabrar</a></p>
-        <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/zakeriaabrar</a></p>
-    </section>
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A short description of your project.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>A short description of your project.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>A short description of your project.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>© 2026 Zakeria Abrar</p>
-    </footer>
+<!-- Education Section -->
+<section id="education">
+    <h2>Education</h2>
+    <p>University of Asia Pacific – 3rd Year Student</p>
+    <p>Learned C, C++, Java; Currently learning Python, HTML, CSS</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:zakeria@example.com">zakeria@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/zakeriaabrar" target="_blank">github.com/zakeriaabrar</a></p>
+    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/zakeriaabrar</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Zakeria Abrar</p>
+</footer>
+
+<!-- JS for Mobile Menu -->
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navUl = document.querySelector('nav ul');
+menuToggle.addEventListener('click', () => {
+    navUl.classList.toggle('show');
+});
+</script>
 
 </body>
 </html>
